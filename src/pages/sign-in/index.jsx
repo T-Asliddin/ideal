@@ -8,16 +8,12 @@ const Index = () => {
   const [form, setForm] = useState({});
   const [open, setOpen] = useState(false);
 
-  
-
   const hendleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
 
   };
   
-  
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -27,7 +23,7 @@ const Index = () => {
         setOpen(true)
       }
     } catch (error) {}
-  };i
+  };
   const toggle=()=>{
     setOpen(false)
   }
